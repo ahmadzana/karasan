@@ -1,0 +1,532 @@
+@font-face {
+  src: url(/assets/fonts/TTHoves-Regular.ttf);
+  font-family: TTHoves-Regular;
+}
+
+@font-face {
+  src: url(/assets/fonts/TTHoves-Bold.ttf);
+  font-family: TTHoves-bold;
+}
+
+@font-face {
+  src: url(/assets/fonts/TTHoves-Medium.ttf);
+  font-family: TTHoves-medium;
+}
+
+@font-face {
+  src: url(/assets/fonts/TTHoves-DemiBold.ttf);
+  font-family: TTHoves-DemiBold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.buttonRed {
+  border: none;
+  font-family: TTHoves-bold;
+  color: white;
+  border-radius: 10px;
+  width: 114px;
+  height: 34px;
+  background-color: #D91323;
+}
+
+.invest {
+  margin-top: 5px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.25px solid rgba(112, 112, 112, 0.2);
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+header .brand .plus {
+  color: #636363;
+}
+
+header .search input {
+  border: none;
+  color: black;
+  background-color: #F8F8F8;
+  text-align: center;
+  height: 34px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+header .search button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 33px;
+  width: 45px;
+  text-align: center;
+  background-color: #D91323;
+  cursor: pointer;
+}
+
+header .search button:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+header .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 100px;
+}
+
+header .icon-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+header .icon-button:hover {
+  cursor: pointer;
+}
+
+header .icon-button:active {
+  background: #cccccc;
+}
+
+header .icon-button__badge {
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  background: #D91323;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+header .bars {
+  position: relative;
+  top: 10px;
+  margin: 0 15px;
+}
+
+header .bars:hover {
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 5%;
+  font-family: TTHoves-DemiBold;
+  text-align: center;
+}
+
+.title b {
+  color: #D91323;
+}
+
+.title-paragraph {
+  margin-top: 18px;
+  font-family: TTHoves-Regular;
+  text-align: center;
+  color: #D1D1D1;
+}
+
+main {
+  width: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 5%;
+  -ms-grid-columns: 675px 579px;
+      grid-template-columns: 675px 579px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: TTHoves-medium;
+}
+
+main .payment {
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  background-color: #F8F8F8;
+  height: 19em;
+  border-radius: 10px;
+  padding: 15px 0;
+}
+
+main .payment .lineunder {
+  position: absolute;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  margin: 8px 0;
+  width: 674px;
+}
+
+main .payment label.container {
+  margin-top: 28px;
+  margin-left: 20px;
+}
+
+main .payment label.conx {
+  margin-top: -10px !important;
+}
+
+main .payment fieldset .imgbig {
+  position: relative;
+  left: 390px;
+  bottom: 24px;
+}
+
+main .payment fieldset .imgSmall-1 {
+  position: relative;
+  left: 490px;
+  bottom: 24px;
+}
+
+main .payment fieldset .imgSmall-2 {
+  position: relative;
+  left: 494px;
+  bottom: 24px;
+}
+
+main .payment fieldset .imgSmall-3 {
+  position: relative;
+  left: 490px;
+  bottom: 24px;
+}
+
+main .payment legend {
+  position: relative;
+  bottom: 38px;
+}
+
+main .payment .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main .payment .container p {
+  margin-left: 30px;
+}
+
+main .payment .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+main .payment .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  width: 20px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+main .payment .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+main .payment .container input:checked ~ .checkmark {
+  background-color: #D91323;
+}
+
+main .payment .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+main .payment .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+main .payment .container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 3px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+main .summary {
+  font-family: TTHoves-medium;
+  width: 479px;
+  background-color: #F8F8F8;
+  height: 100%;
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+}
+
+main .summary .billstxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: TTHoves-medium !important;
+}
+
+main .summary .billstxt h2,
+main .summary .billstxt .fee {
+  margin-bottom: 17px;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+main .summary img {
+  margin-left: 20px;
+}
+
+main legend {
+  position: relative;
+  bottom: 24px;
+  border: none;
+}
+
+main fieldset {
+  height: 420px;
+  border: none;
+}
+
+main .bills {
+  padding: 11px 25px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+main .bills h2 {
+  font-size: 18px;
+}
+
+main .bills p {
+  font-family: TTHoves-Regular;
+  margin-bottom: 17px;
+}
+
+main .total {
+  font-family: TTHoves-medium !important;
+  padding: 11px 25px;
+  font-size: 14px;
+}
+
+main .total p {
+  font-family: TTHoves-Regular;
+  margin-bottom: 17px;
+}
+
+main .total .subscribe {
+  margin-top: 20px;
+  width: 413px;
+  height: 50px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #F8F8F8;
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: TTHoves-Regular;
+  height: 470px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2C463F;
+}
+
+footer p {
+  font-family: TTHoves-Bold;
+  margin-bottom: 12px;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer .about {
+  margin-top: 40px;
+}
+
+footer .about .txts {
+  font-family: TTHoves-Regular;
+  margin: 20px 0;
+}
+
+footer .about .lang {
+  font-family: TTHoves-Regular;
+  font-size: 14px;
+  background-color: #fff;
+  width: 190px;
+  height: 50px;
+  border: 2px solid rgba(112, 112, 112, 0.2);
+  border-radius: 7px;
+  text-align: center;
+  padding: 15px;
+  margin: 26px 0;
+}
+
+footer .about .lang label {
+  margin-right: 10px;
+  color: #bebcbc;
+}
+
+footer .about .lang select {
+  font-family: TTHoves-medium;
+  border: none;
+}
+
+footer .about .border-top {
+  border-top: 2px solid rgba(112, 112, 112, 0.2);
+  width: 300px;
+}
+
+footer .about .email {
+  font-family: TTHoves-medium;
+  font-size: 14px;
+  background-color: #fff;
+  width: 300px;
+  height: 50px;
+  border: 2px solid rgba(112, 112, 112, 0.2);
+  border-radius: 7px;
+  text-align: center;
+  margin: 26px 0;
+}
+
+footer .about .email #input {
+  margin-top: 14px;
+  border: none;
+  margin-right: 38px;
+  color: #bebcbc;
+}
+
+footer .about .email button {
+  font-family: TTHoves-Bold;
+  background-color: #fff;
+  height: 30px;
+  width: 75px;
+  border: none;
+  border-left: 2px solid #D9D9D9;
+}
+
+footer .about .email button:hover {
+  -webkit-box-shadow: 15px 1px 8px rgba(112, 112, 112, 0.2) inset;
+          box-shadow: 15px 1px 8px rgba(112, 112, 112, 0.2) inset;
+  color: #4b4b4b;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 125px 0;
+  padding: 15px;
+}
+
+footer .links .linkstxt {
+  position: relative;
+  left: -15px;
+}
+
+footer .links .icons {
+  cursor: pointer;
+}
+
+footer .links .ul1 {
+  margin-right: 50px;
+}
+
+footer .links p {
+  margin-bottom: 20px;
+}
+
+footer .links ul li {
+  margin: 10px 0;
+}
+
+footer .pic {
+  margin-top: 89px;
+}
+
+.buttonRed:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.copyright {
+  font-family: TTHoves-Regular;
+  margin: 5px 10px;
+}
+/*# sourceMappingURL=style.css.map */

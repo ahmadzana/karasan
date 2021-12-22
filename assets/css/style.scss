@@ -1,0 +1,531 @@
+@font-face {
+    src: url(/assets/fonts/TTHoves-Regular.ttf);
+    font-family: TTHoves-Regular;
+}
+
+@font-face {
+    src: url(/assets/fonts/TTHoves-Bold.ttf);
+    font-family: TTHoves-bold;
+}
+
+@font-face {
+    src: url(/assets/fonts/TTHoves-Medium.ttf);
+    font-family: TTHoves-medium;
+}
+
+@font-face {
+    src: url(/assets/fonts/TTHoves-DemiBold.ttf);
+    font-family: TTHoves-DemiBold;
+}
+
+$creamWhite :#c7b8b8;
+$red:#D91323;
+$grey:rgba(112, 112, 112, 0.2);
+$input:#F8F8F8;
+$boxShadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+.buttonRed {
+    border: none;
+    font-family: TTHoves-bold;
+    color: white;
+    border-radius: 10px;
+    width: 114px;
+    height: 34px;
+    background-color: $red;
+}
+
+.invest {
+    margin-top: 5px;
+}
+
+header {
+    display: flex;
+
+    justify-content: space-between;
+    border-bottom: 0.25px solid $grey;
+    width: 100%;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+
+    .brand {
+        display: flex;
+        gap: 50px;
+
+        .plus {
+            color: rgb(99, 99, 99);
+        }
+    }
+
+    .search {
+        input {
+            border: none;
+            color: black;
+            background-color: $input;
+            text-align: center;
+            height: 34px;
+            width: 300px;
+            border-radius: 4px;
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            height: 33px;
+            width: 45px;
+            text-align: center;
+            background-color: $red;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: $boxShadow;
+        }
+    }
+
+    .profile {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 100px;
+    }
+
+    .icon-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+
+        background: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+    }
+
+    .icon-button:hover {
+        cursor: pointer;
+    }
+
+    .icon-button:active {
+        background: #cccccc;
+    }
+
+    .icon-button__badge {
+        position: absolute;
+        top: -8px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        background: $red;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .bars {
+        position: relative;
+        top: 10px;
+        margin: 0 15px;
+
+    }
+
+    .bars:hover {
+        cursor: pointer;
+    }
+
+
+}
+
+.title {
+    margin-top: 5%;
+    font-family: TTHoves-DemiBold;
+    text-align: center;
+
+    b {
+        color: $red;
+    }
+}
+
+.title-paragraph {
+    margin-top: 18px;
+    font-family: TTHoves-Regular;
+    text-align: center;
+    color: #D1D1D1;
+}
+
+main {
+    width: 100%;
+    display: inline-grid;
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 675px 579px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    font-family: TTHoves-medium;
+
+    .payment {
+        border: 1px solid $grey;
+        background-color: #F8F8F8;
+        height: 19em;
+        border-radius: 10px;
+        padding: 15px 0;
+
+        .lineunder {
+            position: absolute;
+            border-bottom: 1px solid $grey;
+            margin: 8px 0;
+            width: 674px;
+        }
+
+        label.container {
+            margin-top: 28px;
+            margin-left: 20px;
+        }
+
+        label.conx {
+            margin-top: -10px !important;
+        }
+
+        fieldset {
+            .imgbig {
+                position: relative;
+                left: 390px;
+                bottom: 24px;
+               
+            }
+
+            .imgSmall-1 {
+                position: relative;
+                left: 490px;
+                bottom: 24px;
+            }
+
+            .imgSmall-2 {
+                position: relative;
+                left: 494px;
+                bottom: 24px;
+            }
+
+            .imgSmall-3 {
+                position: relative;
+                left: 490px;
+                bottom: 24px;
+            }
+        }
+
+        legend {
+            position: relative;
+            bottom: 38px;
+        }
+
+        .container {
+
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            font-size: 18px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+                p{
+                    margin-left: 30px;
+                }
+        }
+
+
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid $grey;
+            width: 20px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 10px;
+        
+            
+        }
+
+
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+
+        .container input:checked~.checkmark {
+            background-color: $red;
+        }
+
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+
+        .container .checkmark:after {
+            left: 6px;
+            top: 1px;
+            width: 3px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+    }
+
+    .summary {
+        font-family: TTHoves-medium;
+
+        width: 479px;
+        background-color: #F8F8F8;
+        height: 100%;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        display: grid;
+
+        .billstxt {
+            display: flex;
+            font-family: TTHoves-medium !important;
+
+
+            h2,
+            .fee {
+                margin-bottom: 17px;
+                margin-right: auto;
+                font-size: 18px;
+            }
+        }
+
+        img {
+            margin-left: 20px;
+        }
+    }
+
+    legend {
+        position: relative;
+        bottom: 24px;
+        border: none;
+    }
+
+    fieldset {
+        height: 420px;
+        border: none;
+    }
+
+    .bills {
+        padding: 11px 25px;
+        border-bottom: 1px solid $grey;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-family: TTHoves-Regular;
+            margin-bottom: 17px;
+        }
+
+    }
+
+    .total {
+        font-family: TTHoves-medium !important;
+        padding: 11px 25px;
+        font-size: 14px;
+
+        p {
+            font-family: TTHoves-Regular;
+            margin-bottom: 17px;
+        }
+
+        .subscribe {
+            margin-top: 20px;
+            width: 413px;
+            height: 50px;
+        }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+    border: 1px solid $grey;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: TTHoves-Regular;
+    height: 470px;
+
+    a {
+        text-decoration: none;
+        color: #2C463F;
+    }
+
+    p {
+        font-family: TTHoves-Bold;
+        margin-bottom: 12px;
+    }
+
+    ul {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .about {
+        margin-top: 40px;
+
+        .txts {
+            font-family: TTHoves-Regular;
+            margin: 20px 0;
+        }
+
+        .lang {
+            font-family: TTHoves-Regular;
+            font-size: 14px;
+            background-color: #fff;
+            width: 190px;
+            height: 50px;
+            border: 2px solid $grey;
+            border-radius: 7px;
+            text-align: center;
+            padding: 15px;
+            margin: 26px 0;
+
+            label {
+                margin-right: 10px;
+                color: #bebcbc;
+            }
+
+            select {
+                font-family: TTHoves-medium;
+                border: none;
+            }
+        }
+
+        .border-top {
+            border-top: 2px solid $grey;
+            width: 300px;
+        }
+
+        .email {
+            font-family: TTHoves-medium;
+            font-size: 14px;
+            background-color: #fff;
+            width: 300px;
+            height: 50px;
+            border: 2px solid $grey;
+            border-radius: 7px;
+            text-align: center;
+            margin: 26px 0;
+
+            #input {
+                margin-top: 14px;
+                border: none;
+                margin-right: 38px;
+                color: #bebcbc;
+
+            }
+
+            button {
+                font-family: TTHoves-Bold;
+                background-color: #fff;
+                height: 30px;
+                width: 75px;
+                border: none;
+                border-left: 2px solid #D9D9D9;
+            }
+
+            button:hover {
+                box-shadow: 15px 1px 8px $grey inset;
+                color: #4b4b4b;
+            }
+        }
+
+
+    }
+
+    .links {
+        display: flex;
+        margin: 125px 0;
+        padding: 15px;
+
+        .linkstxt {
+            position: relative;
+            left: -15px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+
+        .ul1 {
+            margin-right: 50px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .pic {
+        margin-top: 89px;
+    }
+}
+
+
+.buttonRed:hover {
+    box-shadow: $boxShadow;
+
+}
+
+.copyright {
+    font-family: TTHoves-Regular;
+    margin: 5px 10px;
+}
