@@ -11,12 +11,12 @@
 }
 
 @font-face {
-  src: url(fonts/TTHoves-Medium.ttf);
+  src: url(https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Medium.ttf);
   font-family: TTHoves-medium;
 }
 
 @font-face {
-  src: url(assets/fonts/TTHoves-DemiBold.ttf);
+  src: url(https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-DemiBold.ttf);
   font-family: TTHoves-DemiBold;
 }
 
