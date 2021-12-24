@@ -1,11 +1,11 @@
 @font-face {
-  src: url(fonts/TTHoves-Regular.ttf);
+  src: url(https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Regular.ttf);
   font-family: TTHoves-Regular;
 }
 
 
 @font-face {
-  src: url(fonts/TTHoves-Bold.ttf);
+  src: url("https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Bold.ttf");
   font-family: TTHoves-bold;
 }
 
