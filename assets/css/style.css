@@ -3,10 +3,10 @@
   font-family: TTHoves-Regular;
 }
 
-@import url('https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Bold.ttf');
+
 
 @font-face {
-  src: url("https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Bold.ttf");
+  @import url('https://ahmadzana.github.io/karasan/assets/fonts/TTHoves-Bold.ttf');
   font-family: TTHoves-bold;
 }
 
